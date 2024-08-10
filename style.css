@@ -12,7 +12,7 @@
     --ff-dm-sans: "Inter", sans-serif;
 
     --fs-heading: 5.5rem;
-    --fs-title-lg: 2.6rem;
+    --fs-title-lg: 3rem;
     --fs-title: 1.6rem;
     --fs-body: 1.8rem;
     --fs-button: 1.5rem;
@@ -89,7 +89,7 @@ ul {
     justify-content: space-between;
     border: 17px solid var(--on-background);
     border-radius: var(--radius-36);
-    max-width: 1300px;
+    max-width: 1150px;
     width: 100%;
     font-weight: 500;
     box-shadow: 0px 3px 4px 0px #E2E2E3;
@@ -119,4 +119,90 @@ ul {
     color: var(--text-color);
     font-weight: 600;
     text-decoration: none;
+}
+ 
+.home-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 50px;
+    z-index: 1;
+    position: relative;
+    padding: 30px;
+}
+
+.content {
+    color: var(--text-color);
+    max-width: 950px;
+    width: 100%;
+}
+
+.content h1 {
+    font-size: var(--fs-heading);
+    line-height: 11rem;
+    font-weight: 500;
+}
+
+.content h1 span {
+    display: inline;
+    background-color: var(--yelow);
+    padding: 20px 30px;
+    border-radius: var(--radius-16);
+}
+
+.content p {
+    flex-wrap: wrap;
+    line-height: 3rem;
+    margin-top: 20px;
+}
+
+.scores {
+    font-family: "Roboto Mono", monospace;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--on-background);
+    max-width: 1000px;
+    width: 100%;
+    height: 125px;
+    margin-top: 60px;
+    border-radius: var(--radius-16);
+    box-shadow: 0px 0px 50px 0px #e2e2e3ab;
+}
+
+.scores .part {
+    color: var(--text-color);
+}
+
+.scores .part h1 {
+    font-size: var(--fs-title-lg);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.scores .part p {
+    margin-top: 15px;
+    color: #1E2022;
+    font-size: var(--fs-title);
+    font-weight: 500;
+}
+
+.line-right ,.line-left {
+    position: absolute;
+    z-index: 0;
+}
+
+.line-right {
+    top: 65px;
+    right: 0px;
+    z-index: 0;
+}
+
+.line-left {
+    top: 65px;
+    left: 0px;
+    z-index: 0;
 }
