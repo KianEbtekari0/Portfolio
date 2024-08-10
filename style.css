@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    /* Colors */
+    --background: #F7F7F8;
+    --on-background: #FFFFFF;
+    --yelow: #FFEF5C;
+    --text-color: #070708;
+    --paragraph: #1E2022;
+
+    /* Font, Weight, Size */
+    --ff-dm-sans: "Inter", sans-serif;
+
+    --fs-heading: 5.5rem;
+    --fs-title-lg: 2.6rem;
+    --fs-title: 1.6rem;
+    --fs-body: 1.8rem;
+    --fs-button: 1.5rem;
+    --fs-label: 1.4rem;
+    --weight-bold: 700;
+
+    /* radius */
+    --radius-4: 4px;
+    --radius-8: 8px;
+    --radius-16: 16px;
+    --radius-24: 24px;
+    --radius-36: 36px;
+
+    /* transition */
+    --transition-short: 250ms ease;
+    --transition-long: 500ms ease;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-dm-sans);
+}
+
+a,
+img,
+span,
+iframe,
+button { display: block; }
+
+button {
+    cursor: pointer;
+}
+
+html {
+    font-family: var(--ff-dm-sans);
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--ff-dm-sans);
+    background-color: var(--background);
+    color: var(--on-background);
+    font-size: var(--fs-body);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: var(--banner-background);
+    border-radius: var(--radius-8);
+}
+
+header {
+    background-color: var(--background);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+ul {
+    background-color: var(--on-background);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 17px solid var(--on-background);
+    border-radius: var(--radius-36);
+    max-width: 1300px;
+    width: 100%;
+    font-weight: 500;
+    box-shadow: 0px 3px 4px 0px #E2E2E3;
+}
+
+.left-side {
+    display: flex;
+    gap: 35px;
+}
+
+.left-side a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: var(--fs-title);
+}
+
+.navbar-btn {
+    color: var(--text-color);
+    background-color: var(--yelow);
+    border: none;
+    width: 150px;
+    height: 43px;
+    border-radius: var(--radius-36);
+}
+
+.navbar-btn a {
+    color: var(--text-color);
+    font-weight: 600;
+    text-decoration: none;
+}
